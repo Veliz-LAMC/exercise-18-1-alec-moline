@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<title>San Joaquin Valley Town Hall</title>
-<link rel="shortcut icon" href="images/favicon.ico">
-<link rel="stylesheet" type="text/css" href="styles/normalize.css">
-<link rel="stylesheet" href="styles/speaker.css">
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script src="javascript/image_swap.js"></script>
+	<meta charset="utf-8">
+	<title>San Joaquin Valley Town Hall</title>
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/speaker.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="javascript/image_swap.js"></script>
 </head>
 
 <body>
@@ -39,17 +39,24 @@
     				<img src="images/brancaccio75.jpg" alt=""></a></li>
     			<li><a href="images/sorkin_desk260.jpg" title="Andrew Ross Sorkin">
     				<img src="images/sorkin75.jpg" alt=""></a></li>
-    			<li><a href="images/chua_220.jpg" >
+    			<li><a href="images/chua_220.jpg" title="Amy Chua">
     				<img src="images/chua75.jpg" alt=""></a></li>
     			<li><a href="images/sampson_dinosaur.jpg" title="Scott Sampson">
     				<img src="images/sampson75.jpg" alt=""></a></li>
   			</ul>
-  			<h2>David Brancaccio</h2>
-  			<p><img src="images/brancaccio_EEC.jpg" alt=""></p>
+  			<h2 id="caption">David Brancaccio</h2>
+  			<p><img src="images/brancaccio_EEC.jpg" id="image" alt=""></p>
 		</section>
 	</main>
 	<footer>
-  		<p>&copy; 2016, San Joaquin Valley Town Hall, Fresno, CA 93755</p>
+		<p>
+			<script>
+				let today = new Date();
+				document.write("&copy; &nbsp;");
+				document.write(today.getFullYear());
+				document.write(", San Joaquin Valley Town Hall, Fresno, CA 93755")
+			</script>
+		</p>
 	</footer>
 </body>
 </html>
